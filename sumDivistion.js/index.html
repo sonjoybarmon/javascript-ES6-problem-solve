@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JavaScript</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        
+    </style>
+  </head>
+  <body>
+      <div class="container align-items-center justify-content-center ">
+        <form class=" ">
+            <div class="colletion">
+                <div class="1st_form d-flex m-2"><span>1st Number : </span><input type="text" id="firstNumber" class="form-control ml-3" style="width: 150px;"/> </div>
+                <div class="2nd_form d-flex m-2"><span>2nd Number: </span><input type="text" id="secondNumber" class="form-control ml-3" style="width: 150px;"/> </div>
+                <input type="button" onClick="multiplyBy()" Value="Multiply" />
+                <input type="button" onClick="divideBy()" Value="Divide" />
+            </div>
+        </form>
+            <p>The Result is : <br>
+            <span id = "result"></span>
+            </p>
+      </div>
+   
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function multiplyBy(){
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2;
+        }
+        function divideBy(){ 
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                document.getElementById("result").innerHTML = num1 / num2;
+        }
+    </script>
+  </body>
+</html>
