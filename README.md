@@ -1,1 +1,1 @@
-# javascript-And-javascript-problem-
+# javasript-problems-ES6
